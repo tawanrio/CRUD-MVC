@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color:black;
+}
+table{
+    border: solid black 1px;
+    width: 50%;
+}
+td,th{
+    border: solid black 1px;
+}
+button{
+    width: 100%;
+}
+header.header{
+    grid-area: header;
+    background-color: #c8b4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main.main{
+    padding: 30px;
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+   
+}
+main div.card{
+    
+    display: flex;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, .4);
+    flex-direction: column;
+    align-items:center ;
+    border: solid black 2px;
+    width: 450px;
+    padding-bottom: 20px;
+}
+main div.card-header {
+    background-color: #c8b4ff;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+main div.card-main{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .card-btn,li{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
+    border: solid black 2px;    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    ;
+}
+
+main  .card-btn:hover,nav ul li:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+main div.card-select input,div.card-select button,select.select{
+    text-align: center;
+    width: 350px;  
+    margin-bottom: 20px;
+    padding: 10px;
+}
+select.select{
+    width:170px ;
+}
+main div.card-select form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main div.card-select form div.select-main{
+ display: flex;
+ max-width: 420px;
+}
+main .card-footer .btn-alterar{
+    background-color: rgb(87, 223, 87);
+}
+main .card-footer .btn-deletar{
+    background-color: rgb(255, 60, 60);
+}
+
+main div.card form.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+main div.card-create form.form-create .create-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+main div.card-create form.form-create .create-main .create{
+    padding: 5px;
+    margin: 5px;
+}
+div.row1 input.input-row1{width:50%;}
+div.row1 input.input-row2{width:25%;}
+
+div.row2 input.input-row1{width:38%;}
+div.row2 input.input-row2{width:37%;}
+
+div.row3 input.input-row1{width:10%;}
+div.row3 input.input-row2{width:19%;}
+div.row3 input.input-row3{width:18%;}
+div.row3 input.input-row4{width:24%;}
+
+form.form-create button{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    
+}
+main div.card-footer{
+    text-align: center;
+    margin-top: 10px;
+}
+main div.card-footer table.result{
+   width: 400px;
+}
+a.btn-alterar{
+   width: 178px;
+ 
+}
+nav.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    align-items: center;
+    padding: 30px 50px;
+}   
+nav.nav ul li{
+   list-style: none;
+}
+footer.footer{
+    grid-area: footer;
+    background-color: #c8b4ff;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+

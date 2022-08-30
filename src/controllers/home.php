@@ -1,0 +1,3 @@
+<?php
+
+loadTemplate('home');

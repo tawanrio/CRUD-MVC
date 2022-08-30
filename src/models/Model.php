@@ -20,10 +20,9 @@ class Model{
     public static function offSet($offset){
         $offset = $offset * 15;
         return "LIMIT 15 OFFSET $offset";
-      //  return "LIMIT $offset,15";
     }
     public static function get($filter = [], $columns = '*', $offset = 0){
-        $query = "SELECT $columns FROM " . static::$tableName ;
+        $query = "SELECT $columns FROM " . self::$tableName ;
         $query .= ' WHERE 1 = 1 ';
         foreach($filter as $col => $value){
             $value = "%${value}%";

@@ -1,6 +1,6 @@
 <?php
 
-function loadTemplate($pag, $arr= []){
+function loadTemplate($pag, $arr = []){
 $arr = $arr;
 require_once(realpath(TEMPLATE_PATH . '/header.php'));
 require_once(realpath(TEMPLATE_PATH . '/nav.php'));

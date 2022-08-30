@@ -17,10 +17,10 @@
             <div class="card-footer">
                 <div class="card-result">
                 <?php 
-                if(count($arr) >= 1){
-                    ?> <table class="result">
+                    if(count($arr) >= 1):
+                ?> <table class="result">
                     <?php
-                        foreach($arr as $row){
+                        foreach($arr as $row):
                            ?>
                            <tr>
                               <td> <?php print_r($row['nome']);?></td>
@@ -29,11 +29,9 @@
                               <td class="btn-deletar"><a href="index.php?page=delete&id=<?= $row['id']?>">Deletar</a></td>
                            </tr> 
                           
-                           <?php
-                        }   
-                    }
-                    ?>
-                </table>
+                           <?php endforeach; ?>
+                    </table>
+                <?php endif; ?> 
                 <br>
             
             </div> <br><br>

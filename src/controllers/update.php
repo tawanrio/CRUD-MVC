@@ -3,6 +3,8 @@
 $update = isset($_GET['id']) ? $_GET['id'] : null;
 $person = Model::getOne(['id' => $update]);
 
+print_r($person);
+
 $pessoa['id'] = isset($_POST['id']) ? $_POST['id'] : $person['id'];
 $pessoa['nome'] = isset($_POST['nome']) ? $_POST['nome'] : $person['nome'];
 $pessoa['nascimento'] = isset($_POST['nascimento']) ? $_POST['nascimento'] : $person['nascimento'];
@@ -11,7 +13,7 @@ $pessoa['nacionalidade'] = isset($_POST['nacionalidade']) ? $_POST['nacionalidad
 $pessoa['sexo'] = isset($_POST['sexo']) ? $_POST['sexo'] : $person['sexo'];
 $pessoa['peso'] = isset($_POST['peso']) ? $_POST['peso'] : $person['peso'];
 $pessoa['altura'] = isset($_POST['altura']) ? $_POST['altura'] : $person['altura'];
-$pessoa['cursopreferido'] = isset($_POST['curso']) ? $_POST['curso'] : $person['cursopreferido'];
+$pessoa['cursopreferido'] = isset($_POST['curso']) ? $_POST['curso'] : '';
 
 
  
